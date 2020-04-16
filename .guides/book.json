@@ -87,6 +87,19 @@
      "type": "page"
     }
    ]
+  },
+  {
+   "title": "Partial Points",
+   "id": "a4bf2890-7e87-b4ef-62e4-1ccb35801e2c",
+   "type": "section",
+   "children": [
+    {
+     "id": "5c0ba65c-3c39-daa8-7ed5-72a8955b681f",
+     "title": "Custom Test",
+     "pageId": "cb7652ff-32a7-216d-fd16-ed99ef37e0ad",
+     "type": "page"
+    }
+   ]
   }
  ]
 }

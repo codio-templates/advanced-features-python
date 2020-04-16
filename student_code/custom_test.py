@@ -1,3 +1,3 @@
-a = "Hello world"
-# b = "world"
-print(a)
+a = "Hello "
+b = "world"
+print(a + b)

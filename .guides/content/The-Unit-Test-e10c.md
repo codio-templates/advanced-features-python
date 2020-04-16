@@ -21,3 +21,4 @@ Circles cannot have a negative radius, so the student code should raise a value 
 [See the Type Test](open_file .guides/test_circle_area.py panel=0 ref="def test_types" count=4)
 
 A circle's radius cannot be expressed as a string or boolean value. In addition, a radius must be a real number. In Python, `j` represents the square root of -1. Verify that the student code raises a type error when parameters are not a real number.
+

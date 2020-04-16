@@ -19,16 +19,16 @@
      "pageId": "ada6b809-2203-1f25-27b7-06ff13435a4b"
     },
     {
-     "id": "1406b074-2624-60fc-ef89-addb8de005a0",
      "title": "Adding the Assessment",
-     "pageId": "d7bea1d3-6b94-8aa2-a99f-2426878c943a",
-     "type": "page"
+     "id": "1406b074-2624-60fc-ef89-addb8de005a0",
+     "type": "page",
+     "pageId": "d7bea1d3-6b94-8aa2-a99f-2426878c943a"
     },
     {
-     "id": "3f86cc96-4e6e-fac7-f54e-1e6e2a02cbdd",
      "title": "Testing Student Code",
-     "pageId": "41b46506-78b7-957f-1283-bce3af68ec40",
-     "type": "page"
+     "id": "3f86cc96-4e6e-fac7-f54e-1e6e2a02cbdd",
+     "type": "page",
+     "pageId": "41b46506-78b7-957f-1283-bce3af68ec40"
     }
    ]
   },
@@ -38,22 +38,22 @@
    "type": "section",
    "children": [
     {
-     "id": "042858bf-e080-d309-55e6-f8db84c70ea6",
      "title": "PyCodeStyle Example",
-     "pageId": "1f52eb09-1a53-a1ef-be7b-0cc8a3bedce4",
-     "type": "page"
+     "id": "042858bf-e080-d309-55e6-f8db84c70ea6",
+     "type": "page",
+     "pageId": "1f52eb09-1a53-a1ef-be7b-0cc8a3bedce4"
     },
     {
-     "id": "31673906-0445-4676-0e32-ae8675464bc4",
      "title": "Adding the Style Checker",
-     "pageId": "21d3030d-3927-d4e8-750d-bda69dade208",
-     "type": "page"
+     "id": "31673906-0445-4676-0e32-ae8675464bc4",
+     "type": "page",
+     "pageId": "21d3030d-3927-d4e8-750d-bda69dade208"
     },
     {
-     "id": "c722123c-fda6-c932-c585-8f12dcfe1801",
      "title": "Testing Student Code",
-     "pageId": "aca69245-9151-3e49-5b16-4caf96dc6ee5",
-     "type": "page"
+     "id": "c722123c-fda6-c932-c585-8f12dcfe1801",
+     "type": "page",
+     "pageId": "aca69245-9151-3e49-5b16-4caf96dc6ee5"
     }
    ]
   },
@@ -63,28 +63,28 @@
    "type": "section",
    "children": [
     {
-     "id": "5a436ed1-0da1-2241-9dd6-2b7a265acee2",
      "title": "Unit Test Example",
-     "pageId": "f169736f-d0b6-727e-2f0c-c62394717d2f",
-     "type": "page"
+     "id": "5a436ed1-0da1-2241-9dd6-2b7a265acee2",
+     "type": "page",
+     "pageId": "f169736f-d0b6-727e-2f0c-c62394717d2f"
     },
     {
-     "id": "8138932e-ccb9-efd3-f7b2-25601e5756a8",
      "title": "The Unit Test",
-     "pageId": "e10cfe4c-8784-b91e-8206-14ad0bc8976a",
-     "type": "page"
+     "id": "8138932e-ccb9-efd3-f7b2-25601e5756a8",
+     "type": "page",
+     "pageId": "e10cfe4c-8784-b91e-8206-14ad0bc8976a"
     },
     {
-     "id": "8e91f787-4791-ebbe-f34d-8d460aff624c",
      "title": "Adding the Assessment",
-     "pageId": "991d1787-7a1a-e3b5-7f13-c536b85f1547",
-     "type": "page"
+     "id": "8e91f787-4791-ebbe-f34d-8d460aff624c",
+     "type": "page",
+     "pageId": "991d1787-7a1a-e3b5-7f13-c536b85f1547"
     },
     {
-     "id": "970801d7-f3ed-7923-af73-87044633f731",
      "title": "Testing Student Code",
-     "pageId": "3d9596bf-06c6-c994-538e-053466f2f617",
-     "type": "page"
+     "id": "970801d7-f3ed-7923-af73-87044633f731",
+     "type": "page",
+     "pageId": "3d9596bf-06c6-c994-538e-053466f2f617"
     }
    ]
   },
@@ -94,9 +94,34 @@
    "type": "section",
    "children": [
     {
-     "id": "5c0ba65c-3c39-daa8-7ed5-72a8955b681f",
      "title": "Custom Test",
-     "pageId": "cb7652ff-32a7-216d-fd16-ed99ef37e0ad",
+     "id": "5c0ba65c-3c39-daa8-7ed5-72a8955b681f",
+     "type": "page",
+     "pageId": "cb7652ff-32a7-216d-fd16-ed99ef37e0ad"
+    },
+    {
+     "title": "PyUnit Test",
+     "id": "fccb179a-817f-a00b-7fa1-1da5dedcbdb6",
+     "type": "page",
+     "pageId": "29b28844-1c1b-5b7b-349a-8604c0d86d55"
+    }
+   ]
+  },
+  {
+   "title": "Turtle Python & Pygame",
+   "id": "2ff2479f-4c22-8c16-0513-6f92a324de96",
+   "type": "section",
+   "children": [
+    {
+     "id": "dd20fc96-650b-6d64-adea-358986683e0d",
+     "title": "Turtle Python",
+     "pageId": "2d8de9d0-f566-5b28-3e18-eec80064630e",
+     "type": "page"
+    },
+    {
+     "id": "46389542-ba55-ab52-7aa7-53cdfe1914f0",
+     "title": "Pygame",
+     "pageId": "901a8795-e416-3c0c-35e1-4ff39f037815",
      "type": "page"
     }
    ]

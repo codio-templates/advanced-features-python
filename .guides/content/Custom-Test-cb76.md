@@ -12,7 +12,7 @@ In this particular example, there are six individual tests that run against the 
 
 ### Pass `points` to Codio
 
-An advanced code test without partial points ends with a system exit of 0 (test passed) or 1 (test did not pass). Advanced code tests with partial points are different in that they end with an HTTP request that passes the `points` variable needs to Codio. From the [documentation](https://docs.codio.com/courses/assessments/#partial-score), here is an example of how `points` would be passed to Codio.
+An advanced code test without partial points ends with a system exit of 0 (test passed) or 1 (test did not pass). Advanced code tests with partial points are different in that they end with an HTTP request that passes the `points` variable to Codio. Here is an example (taken from the [documentation](https://docs.codio.com/courses/assessments/#partial-score)) of how `points` would be passed to Codio.
 
 ```python
 import os, requests, sys

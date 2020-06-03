@@ -20,7 +20,7 @@ Leave the `LANGUAGE TYPE` as `custom`. In the field `COMMAND` write the command 
 ![Execution Section](.guides/img/assessment-execution.png)
 
 ## The Grading Section
-If you allow partial points, enter how many total points a student can earn. If not, leave `POINTS` as `1`. Toggle `ONE ATTEMPT ONLY` if you want to restrict students to one submission. To give student rich and immediate feedback, toggle `SHOW ANSWER AND RATIONALE TO STUDENT`. Fill in the box below with a solution, and use [triple back ticks](https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks) to create a code block.
+Enter the number of points for the problem. Toggle `ONE ATTEMPT ONLY` if you want to restrict students to one submission. To give student rich and immediate feedback, toggle `SHOW ANSWER AND RATIONALE TO STUDENT`. Fill in the box below with a solution, and use [triple backticks](https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks) to create a code block.
 
 ![Grading Section](.guides/img/assessment-grading.png)
 

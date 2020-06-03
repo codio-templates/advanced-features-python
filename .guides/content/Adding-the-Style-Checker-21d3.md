@@ -20,7 +20,7 @@ Set the `LANGUAGE TYPE` as `Python`. In the field `LANGUAGE ASSESSMENT SUBTYPE` 
 ![Execution Section](.guides/img/style-execution.png)
 
 ## The Grading Section
-If you allow partial points, enter how many total points a student can earn. If not, leave `POINTS` as `1`. Toggle `ONE ATTEMPT ONLY` if you want to restrict students to one submission. To give student rich and immediate feedback, toggle `SHOW ANSWER AND RATIONALE TO STUDENT`.
+Enter the number of points for the problem. Toggle `ONE ATTEMPT ONLY` if you want to restrict students to one submission. To give student rich and immediate feedback, toggle `SHOW ANSWER AND RATIONALE TO STUDENT`.
 
 ![Grading Section](.guides/img/style-grading.png)
 

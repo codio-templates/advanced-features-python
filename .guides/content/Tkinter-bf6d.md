@@ -1,9 +1,9 @@
-# Turtle Python and Codio
+# Tkinter
 
-To set up a Codio box to work with Turtle Python a few things need to be in place.
+Tkinter is a GUI library for Python.
 
 ## Installing X Server
-Turtle Python requires the use of X server. This can be installed from within the project. Click `Tools` in the menu bar, and then select `Install Software`.
+Tkinter requires the use of X server. This can be installed from within the project. Click `Tools` in the menu bar, and then select `Install Software`.
 
 ![Tools](.guides/img/tools_install.png)
 
@@ -30,18 +30,18 @@ nohup $@ > /dev/null 2>&1&
 Use the `TRY IT` button to call the `bg.sh` script and pass it the `python3` command and the path to the Python file.
 
 ```
-{try it}(bash .guides/bg.sh python3 .guides/turtle_example.py)
+{try it}(bash .guides/bg.sh python3 .guides/tkinter_example.py)
 ```
 
-The `TRY IT` button should now run the code and produce graphical output. You might need to refresh the output by clicking the icon with two blue arrows.
+The `TRY IT` button should now run the code and produce graphical output.
 
-{try it}(bash .guides/bg.sh python3 .guides/turtle_example.py)
+{try it}(bash .guides/bg.sh python3 .guides/tkinter_example.py)
 
 ## Viewing the Output
 
-Codio displays the content of Tkinter on port 3000. In the [editor settings](https://docs.codio.com/courses/authoring/#editor-settings), select the [layout](https://docs.codio.com/courses/settings-actions/#page) that says `3 Panels without tree` (one panel for the Guide, one for the IDE, and the third for the output). Next click on ["Open Tabs"](https://docs.codio.com/courses/settings-actions/#open-tabs_1) and add two tabs. One tab should open a file. Enter the path for the Python file and set the "Panel" to 0. The second tab should preview (eye icon) the output. Ener `https://{{domain3000}}/`, which is how Codio addresses port 3000. Set this "Panel" to 1. 
+Codio displays the content of Turtle Python on port 3000. In the [editor settings](https://docs.codio.com/courses/authoring/#editor-settings), select the [layout](https://docs.codio.com/courses/settings-actions/#page) that says `3 Panels without tree` (one panel for the Guide, one for the IDE, and the third for the output). Next click on ["Open Tabs"](https://docs.codio.com/courses/settings-actions/#open-tabs_1) and add two tabs. One tab should open a file. Enter the path for the Python file and set the "Panel" to 0. The other tab should preview (eye icon) the output. Ener `https://{{domain3000}}/`, which is how Codio addresses port 3000. Set this "Panel" to 1. 
 
-![Turtle Layout](.guides/img/turtle_layout.png)
+![Tkinter Layout](.guides/img/tkinter_layout.png)
 
 The IDE should be in the top-left, the output in the bottom-left, and the Guide will appear on the right.
 
@@ -57,26 +57,30 @@ This message does not refer to the Python code. So the output window will not ap
 [Open Terminal](open_terminal panel=0)
 ```
 
-In the open terminal, students can type in the command to run their code. Try this out by removing the "h" from the `hilbert` function definition. Click on the `TRY IT` button. No error message. 
+In the open terminal, students can type in the command to run their code. Try this out by removing the `_` from the `my_label.grid(row=0, column=0)` command. Click on the `TRY IT` button. No error message. 
 
 ```python
-import turtle
+import tkinter
 
-t = turtle.Turtle()
+window = tkinter.Tk()
+window.title("My Window")
+window.geometry("500x350")
 
-def ilbert(dist, rule, angle, depth, t):
-  """Draw a Hilber Curve"""
+my_label = tkinter.Label(window, text="Hello World", font="DejaVuSerif 18")
+mylabel.grid(row=0, column=0)
+
+window.mainloop() #This is the last line of code in your program
 ```
 
-{try it}(bash .guides/bg.sh python3 .guides/turtle_example.py 1)
+{try it}(bash .guides/bg.sh python3 .guides/tkinter_example.py 1)
 
-Click on the `TRY IT` button. No error message, but there is no output. Click on the link below to open the terminal and enter `python3 .guides/turtle_example.py`.
+Click on the `TRY IT` button. No error message, but there is no output. Click on the link below to open the terminal and enter `python3 .guides/tkinter_example.py`.
 
 [Open Terminal](open_terminal panel=0)
 
-You should see the error message that `name 'hilbert' is not defined`.
+You should see the error message that `name 'mylabel' is not defined`.
 
-![Terminal Error](.guides/img/terminal_error.png)
+![Terminal Error](.guides/img/tkinter_error.png)
 
 ## Slow Output
 

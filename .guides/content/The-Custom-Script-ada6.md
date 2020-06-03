@@ -1,6 +1,6 @@
 # The Custom Script
 
-You can upload any scripts you already have to Codio. Scripts should be kept in the `.guides` folder so that students do not have access to them.
+You can upload any grading scripts you already have to Codio. Scripts should be kept in the `.guides` folder so that students do not have access to them.
 
 ## Setup
 
@@ -14,13 +14,13 @@ The `path` variable contains the path to the student code, and the `file` variab
 
 [See Functions](open_file .guides/custom_test_script.py panel=0 ref="def" count=33)
 
-Each function returns a boolean value and tests an aspect of the student code. One function that will always be there is `check_output`. The number of other functions and their specifics depend on the coding problem.
+Each function returns a boolean value and tests an aspect of the student code. The number of functions for you grading script will depend on the number of aspects you are evaluating from the student code.
 
 ## Feedback
 
 [See Feedback](open_file .guides/custom_test_script.py panel=0 ref="if not" count=24)
 
-Each function above is called separately. If they return `False`, then feedback should be given to the student as to why their code did not pass the code test. Output from `print` statements is rendered in the Guide, which is displayed on a webpage. So printing HTML tags will output HTML.
+Each function above is called separately. If they return `False`, then feedback should be given to the student as to why their code did not pass the code test. Output from `print` statements in an advanced code test can render HTML. So printing HTML tags will output HTML.
 
 ## Returning the Result
 

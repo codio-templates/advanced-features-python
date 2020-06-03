@@ -1,6 +1,6 @@
 # Sample content New Page
 
-You can upload any unit tests you already have to Codio. Scripts should be kept in the `.guides` folder so that students do not have access to them.
+You can upload any unit tests you already have to Codio. Scripts should be kept in the `.guides` folder so that students do not have access to them. **Note**, this example assumes a straight points problem (no partial points), so points are assigned to the student only if all of the tests pass.
 
 ## The Setup
 [See the Setup](open_file .guides/test_circle_area.py panel=0 ref="import" count=5)

@@ -77,6 +77,29 @@
    "learningObjectives": ""
   },
   {
+   "id": "05ec9070-0b17-39ff-18e9-4ca6f65404c3",
+   "title": "Helper Script",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": ".guides/helper_script_straight_points.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Helper-Script-05ec.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
    "id": "1f52eb09-1a53-a1ef-be7b-0cc8a3bedce4",
    "title": "PyCodeStyle Example",
    "files": [
@@ -231,10 +254,44 @@
   {
    "id": "29b28844-1c1b-5b7b-349a-8604c0d86d55",
    "title": "PyUnit Test",
-   "files": [],
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": ".guides/test_circle_area.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/PyUnit-Test-29b2.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "6f80a947-8013-06b8-777c-fd28525e12c1",
+   "title": "Helper Script",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": ".guides/helper_script_partial_points.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "2-panels",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Helper-Script-6f80.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,
@@ -291,6 +348,34 @@
    "path": [],
    "type": "markdown",
    "content-file": ".guides/content/Pygame-901a.md",
+   "chapter": false,
+   "reset": [],
+   "teacherOnly": false,
+   "learningObjectives": ""
+  },
+  {
+   "id": "bf6de9f4-676f-0eca-6c96-7862ce43ab6f",
+   "title": "Tkinter",
+   "files": [
+    {
+     "path": "#tabs",
+     "action": "close"
+    },
+    {
+     "path": "#preview: https://{{domain3000}}/",
+     "panel": 1,
+     "action": "open"
+    },
+    {
+     "path": ".guides/tkinter_example.py",
+     "panel": 0,
+     "action": "open"
+    }
+   ],
+   "layout": "3-cell",
+   "path": [],
+   "type": "markdown",
+   "content-file": ".guides/content/Tkinter-bf6d.md",
    "chapter": false,
    "reset": [],
    "teacherOnly": false,

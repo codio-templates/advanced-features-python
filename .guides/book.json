@@ -29,6 +29,12 @@
      "id": "3f86cc96-4e6e-fac7-f54e-1e6e2a02cbdd",
      "type": "page",
      "pageId": "41b46506-78b7-957f-1283-bce3af68ec40"
+    },
+    {
+     "id": "ec3cc075-c797-65e5-71fe-c2545b1419f7",
+     "title": "Helper Script",
+     "pageId": "05ec9070-0b17-39ff-18e9-4ca6f65404c3",
+     "type": "page"
     }
    ]
   },
@@ -104,11 +110,17 @@
      "id": "fccb179a-817f-a00b-7fa1-1da5dedcbdb6",
      "type": "page",
      "pageId": "29b28844-1c1b-5b7b-349a-8604c0d86d55"
+    },
+    {
+     "id": "218efac5-e94c-fef4-b769-e60d343a0b5d",
+     "title": "Helper Script",
+     "pageId": "6f80a947-8013-06b8-777c-fd28525e12c1",
+     "type": "page"
     }
    ]
   },
   {
-   "title": "Turtle Python & Pygame",
+   "title": "X Server",
    "id": "2ff2479f-4c22-8c16-0513-6f92a324de96",
    "type": "section",
    "children": [
@@ -122,6 +134,12 @@
      "id": "46389542-ba55-ab52-7aa7-53cdfe1914f0",
      "title": "Pygame",
      "pageId": "901a8795-e416-3c0c-35e1-4ff39f037815",
+     "type": "page"
+    },
+    {
+     "id": "c1ebac83-342a-f436-dc34-8c3529dc5926",
+     "title": "Tkinter",
+     "pageId": "bf6de9f4-676f-0eca-6c96-7862ce43ab6f",
      "type": "page"
     }
    ]

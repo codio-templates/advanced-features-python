@@ -1,4 +1,4 @@
-# Advanced Code Tests in Python
+# Advanced Features in Python
 
 This project walks you through setting up a variety of advanced code tests in Python.
 
@@ -7,6 +7,8 @@ This project walks you through setting up a variety of advanced code tests in Py
 1) Custom Test Script
 1) Pycode Style
 1) PyUnit
+1) Partial Points Tests
+1) Using X Servier
 
 Each section contains the following:
 * A working example from the student perspective. 

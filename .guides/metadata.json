@@ -161,7 +161,7 @@
      "action": "close"
     },
     {
-     "path": ".guides/circle.py",
+     "path": "student_code/circle.py",
      "panel": 0,
      "action": "open"
     }

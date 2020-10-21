@@ -1,6 +1,9 @@
 import unittest
-from circle import circle_area
 from math import pi
+import sys
+sys.path.append("/home/codio/workspace/student_code/")
+from circle import circle_area
+
 
 class TestCircleArea(unittest.TestCase):
   def test_area(self):

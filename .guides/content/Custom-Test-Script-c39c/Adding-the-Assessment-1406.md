@@ -4,10 +4,10 @@
 
 Follow the steps below to add an advanced code test to the Guide.
 
-## Click the Chess Piece
-Click on the chess piece to see all of the assessments that Codio provides. Select `Advanced Code Test`.
+## Assessments Menu
+Click on the Assessments button to see all of the assessments that Codio provides. Select `Advanced Code Test`.
 
-![Click Assessments](.guides/img/click-assessments.png)
+![image of assessments selection screen](https://global.codio.com/content/assessments.png)
 
 ## The General Section
 Add a `Name` to your assessment. This will look like a "title" for the test. Leave some instructions for the student so they understand how to write their code to solve the problem.

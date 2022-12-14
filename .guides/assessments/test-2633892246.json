@@ -1,0 +1,38 @@
+{
+	"source": {
+		"arePartialPointsAllowed": false,
+		"bloomsObjectiveLevel": "",
+		"codeEnvConfig": "{\"type\":\"python\",\"subtype\":\"unittest\",\"files\":[\".guides/secure/test_circle_area.py\"],\"partialPoints\":false,\"maxPoints\":100,\"executable\":\"python3\",\"pythonwd\":\".guides/secure\"}",
+		"command": "python /usr/share/codio/assessments/assessments.py",
+		"guidance": "Here is one possible solution:\n\n```python\nfrom math import pi\n\ndef circle_area(radius):\n  if type(radius) not in [int, float]:\n    raise TypeError(\"Radius must be a non-negative, real number.\")\n  if radius \u003c 0:\n    raise ValueError(\"Radius cannot be a negative number\")\n  return pi * radius ** 2\n```\n\nYour test should test several valid radii. In addition, check fora **value error** when a negative number is passed to `circle_area`. Lastly, check for a **type error** when the wrong data type is passed to `circle_area`.",
+		"instructions": "Write a function called `circle_area` that takes a parameter for the radius. The function should return the area of a circle for the given radius. Your program should raise an error when the wrong data type is passed to the function, and it should raise an error when a negative number is passed to `circle_area`.\n\nSubmit your code to be evaluated.",
+		"learningObjectives": "",
+		"metadata": {
+			"files": [
+				"student_code/circle.py",
+				".guides/circle.py"
+			],
+			"opened": [
+				{
+					"content": "student_code/circle.py",
+					"panelNumber": 0,
+					"type": "file"
+				}
+			],
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Advanced Code Test"
+				}
+			]
+		},
+		"name": "Unit Test Example",
+		"oneTimeTest": true,
+		"points": 100,
+		"showGuidanceAfterResponse": true,
+		"showName": true,
+		"timeoutSeconds": 300
+	},
+	"taskId": "test-2633892246",
+	"type": "test"
+}

@@ -1,0 +1,28 @@
+{
+	"chapter": false,
+	"contentType": "markdown",
+	"files": [
+		{
+			"action": "close",
+			"path": "#tabs"
+		},
+		{
+			"action": "open",
+			"panel": 0,
+			"path": ".guides/turtle_example.py"
+		},
+		{
+			"action": "open",
+			"panel": 1,
+			"path": "#preview: https://{{domain3000}}/"
+		}
+	],
+	"id": "dd20fc96-650b-6d64-adea-358986683e0d",
+	"layout": "3-cell",
+	"learningObjectives": "",
+	"path": [],
+	"reset": [],
+	"teacherOnly": false,
+	"title": "Turtle Python",
+	"type": "page"
+}

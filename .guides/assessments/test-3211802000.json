@@ -1,0 +1,37 @@
+{
+	"source": {
+		"arePartialPointsAllowed": false,
+		"bloomsObjectiveLevel": "",
+		"codeEnvConfig": "{\"type\":\"python\",\"subtype\":\"style\",\"files\":[\"student_code/code_style.py\"],\"partialPoints\":false,\"maxPoints\":1}",
+		"command": "python /usr/share/codio/assessments/assessments.py",
+		"guidance": "Keep the following things in mind when writing Python code:\n\n* Only one import statement per line\n* Blank lines should not have any whitespace\n* Do not put whitespace after a `(`\n* Do not put whitespace before a `)`",
+		"instructions": "Click the button below to check the style of your code.",
+		"learningObjectives": "",
+		"metadata": {
+			"files": [
+				"student_code/code_style.py"
+			],
+			"opened": [
+				{
+					"content": "student_code/code_style.py",
+					"panelNumber": 0,
+					"type": "file"
+				}
+			],
+			"tags": [
+				{
+					"name": "Assessment Type",
+					"value": "Advanced Code Test"
+				}
+			]
+		},
+		"name": "Style Checker",
+		"oneTimeTest": true,
+		"points": 1,
+		"showGuidanceAfterResponse": true,
+		"showName": true,
+		"timeoutSeconds": 300
+	},
+	"taskId": "test-3211802000",
+	"type": "test"
+}

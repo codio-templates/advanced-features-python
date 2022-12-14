@@ -1,0 +1,28 @@
+{
+	"chapter": false,
+	"contentType": "markdown",
+	"files": [
+		{
+			"action": "close",
+			"path": "#tabs"
+		},
+		{
+			"action": "open",
+			"panel": 1,
+			"path": "#preview: https://{{domain3000}}/"
+		},
+		{
+			"action": "open",
+			"panel": 0,
+			"path": ".guides/tkinter_example.py"
+		}
+	],
+	"id": "c1ebac83-342a-f436-dc34-8c3529dc5926",
+	"layout": "3-cell",
+	"learningObjectives": "",
+	"path": [],
+	"reset": [],
+	"teacherOnly": false,
+	"title": "Tkinter",
+	"type": "page"
+}

@@ -1,0 +1,22 @@
+{
+	"allowGuideClose": false,
+	"collapsedOnStart": false,
+	"hideBackToDashboard": false,
+	"hideMenu": false,
+	"hideSectionsToggle": false,
+	"lexikonTopic": "",
+	"order": [
+		"Custom-Test-Script-c39c",
+		"Code-Style-dce6",
+		"Unit-Test-aa39",
+		"Partial-Points-a4bf",
+		"X-Server-2ff2"
+	],
+	"protectLayout": false,
+	"scripts": [],
+	"suppressPageNumbering": false,
+	"theme": "light",
+	"title": "Advanced Code Tests in Python",
+	"useMarkAsComplete": true,
+	"useSubmitButtons": true
+}

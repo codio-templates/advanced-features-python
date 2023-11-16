@@ -3,26 +3,26 @@
 	"contentType": "markdown",
 	"files": [
 		{
-			"action": "close",
-			"path": "#tabs"
+			"path": "#tabs",
+			"action": "close"
 		},
 		{
-			"action": "open",
+			"path": "#preview: https://{{domain3050}}/",
 			"panel": 1,
-			"path": "#preview: https://{{domain3000}}/"
+			"action": "open"
 		},
 		{
-			"action": "open",
+			"path": ".guides/tkinter_example.py",
 			"panel": 0,
-			"path": ".guides/tkinter_example.py"
+			"action": "open"
 		}
 	],
 	"id": "c1ebac83-342a-f436-dc34-8c3529dc5926",
 	"layout": "3-cell",
 	"learningObjectives": "",
 	"path": [],
-	"reset": [],
 	"teacherOnly": false,
 	"title": "Tkinter",
-	"type": "page"
+	"type": "page",
+	"closeTerminalSession": false
 }

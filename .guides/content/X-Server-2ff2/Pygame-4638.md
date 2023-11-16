@@ -1,85 +1,73 @@
-# Pygame and Codio
+# Pygame in Codio
 
-In terms of setting up Pygame in Codio, it is an identical process to that of Turtle Python.
+The setup process for Pygame in Codio mirrors that of Turtle Python, with a few distinct steps.
 
 ## Installing X Server
-Pygame requires the use of X server. This can be installed from within the project. Click `Tools` in the menu bar, and then select `Install Software`.
+Pygame requires X server for graphical operations, which you can install within your project. Access this by navigating to `Tools` in the menu bar and selecting `Install Software`.
 
 ![Tools](.guides/img/tools_install.png)
 
-Codio will open a new tab with additional software you can install. In the search box, type `x` to find the X server package. Click the blue icon next to X server to install it.
+A new tab will open, allowing you to search for the X server package by typing `x` in the search box. Initiate the installation by clicking the blue icon next to the X server.
 
 ![Install X Server](.guides/img/install_x_server.png)
 
-## Bash Script
+## Running the Python Script
+Execute the Pygame Python script directly, ensuring it [utilizes the X server](open_file .guides/pygame_example.py panel=0 ref="import os" count=4) for graphical displays.
 
-Instead of calling the Python script directly, the Python script is passed to a bash script which invokes X server and generates graphical output. Create a file in `.guides` called `bg.sh` and copy/paste the code below into the script.
+[Remove highlighting](open_file .guides/pygame_example.py panel=0)
+
+Use the `TRY IT` button to run the script easily:
 
 ```bash
-#!/bin/bash
-set -e 
-set -o pipefail
-
-. /etc/profile.d/codio-xserver.sh
-
-$1 -m py_compile $2
-
-nohup $@ > /dev/null 2>&1&
+{try it}(python3 .guides/pygame_example.py)
 ```
 
-Use the `TRY IT` button to call the `bg.sh` script and pass it the `python3` command and the path to the Python file.
+Graphical output should appear upon clicking `TRY IT`, with the option to refresh if necessary (using the two blue arrows icon).
 
-```
-{try it}(bash .guides/bg.sh python .guides/pygame_example.py)
-```
-
-The `TRY IT` button should now run the code and produce graphical output.
-
-{try it}(bash .guides/bg.sh python .guides/pygame_example.py)
-
-|||warning
-You might have noticed that the Python commands are called with `python` and not `python3`. Pygame is preinstalled on the Python stack, but it is installed for Python 2 and not Python 3. Pygame works with Python 3, but you would have to use `pip3 install pygame` before hand.
-|||
+{try it}(python3 .guides/pygame_example.py)
 
 ## Viewing the Output
 
-Codio displays the content of Turtle Python on port 3000. In the [editor settings](https://docs.codio.com/courses/authoring/#editor-settings), select the [layout](https://docs.codio.com/courses/settings-actions/#page) that says `3 Panels without tree` (one panel for the Guide, one for the IDE, and the third for the output). Next click on ["Open Tabs"](https://docs.codio.com/courses/settings-actions/#open-tabs_1) and add two tabs. One tab should open a file. Enter the path for the Python file and set the "Panel" to 0. The second tab should preview (eye icon) the output. Ener `https://{{domain3000}}/`, which is how Codio addresses port 3000. Set this "Panel" to 1. 
+Codio directs Pygame output through port 3050. Configure your workspace in the [editor settings](https://docs.codio.com/instructors/authoring/guides/page_editing.html#) by selecting the `3 Panels` layout. Then, in ["Open Tabs"](https://docs.codio.com/instructors/authoring/guides/settings/opentabs.html#open-tabs), add two tabs: one to access the Python file (`Panel 0`) and the other for output preview (`Panel 1`) at `https://{{domain3050}}/`.
 
 ![Pygame Layout](.guides/img/pygame_layout.png)
 
-The IDE should be in the top-left, the output in the bottom-left, and the Guide will appear on the right.
+This layout positions the IDE in the top-left, output at the bottom-left, and the Guide on the right.
 
-## Errors
+## Handling Errors
 
-The `TRY IT` button runs the bash script, which runs without error every time. So the output in the guide will always be that the program ran successfully. 
+Clicking the `TRY IT` button will indicate whether the Python script executed successfully.
 
 ![Program Ran Successfully](.guides/img/successfully.png)
 
-This message does not refer to the Python code. So the output window will not appear if there is a bug in the Python code, but there is no visual feedback in the Guide on what went wrong. This makes debugging hard. If the Python code is called from the terminal, error messages will appear. You can use an [opening directive](https://docs.codio.com/courses/authoring/#examples) to open a terminal in a panel. 
+A successful run message implies script execution, not necessarily Python code accuracy. For debugging, access the terminal through an [opening directive](https://docs.codio.com/instructors/authoring/guides/open_close_content.html#):
 
-```
+```bash
 [Open Terminal](open_terminal panel=0)
 ```
 
-In the open terminal, students can type in the command to run their code. Try this out by removing the "B" from the `Ball` class declaration. Click on the `TRY IT` button. No error message. 
+Run your code in the terminal. For error testing, introduce a typo in a crucial function or class name and note the response.
 
 ```python
+import os
 import pygame
 
-class all:
+os.environ['DISPLAY'] = ':0.0'  # Setting up X11 forwarding
+
+# Example of intentional error in class name
+class all:  
   def __init__(self, surface, color, x, y, r):
+  """ Class setup """
 ```
 
-{try it}(bash .guides/bg.sh python .guides/pygame_example.py 1)
-
-Click on the `TRY IT` button. No error message, but there is no output. Click on the link below to open the terminal and enter `python .guides/pygame_example.py`.
+{try it}(python3 .guides/pygame_example.py)
 
 [Open Terminal](open_terminal panel=0)
 
-You should see the error message that `name 'Ball' is not defined`.
+Errors, such as `name 'Ball' is not defined`, should now be visible.
 
 ![Terminal Error](.guides/img/pygame_error.png)
 
-## Slow Output
+## Understanding Slow Output
 
-X server is not running in the student's browser. It is running in a data center somewhere. So the graphical output has to travel across the network. Poor connections or heavy traffic can affect the output. Students may encounter slight pauses or "jumpy" animation.
+Since the X server operates remotely, network conditions can impact the graphical output from Pygame, potentially causing delays or irregular animations.

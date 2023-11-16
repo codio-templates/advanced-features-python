@@ -1,4 +1,7 @@
+import os
 import turtle
+
+os.environ['DISPLAY'] = ':0.0' # X11 forwarding setup
 
 t = turtle.Turtle()
 

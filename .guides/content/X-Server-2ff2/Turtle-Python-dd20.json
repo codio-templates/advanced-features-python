@@ -3,26 +3,26 @@
 	"contentType": "markdown",
 	"files": [
 		{
-			"action": "close",
-			"path": "#tabs"
+			"path": "#tabs",
+			"action": "close"
 		},
 		{
-			"action": "open",
+			"path": ".guides/turtle_example.py",
 			"panel": 0,
-			"path": ".guides/turtle_example.py"
+			"action": "open"
 		},
 		{
-			"action": "open",
+			"path": "#preview: https://{{domain3050}}/",
 			"panel": 1,
-			"path": "#preview: https://{{domain3000}}/"
+			"action": "open"
 		}
 	],
 	"id": "dd20fc96-650b-6d64-adea-358986683e0d",
 	"layout": "3-cell",
 	"learningObjectives": "",
 	"path": [],
-	"reset": [],
 	"teacherOnly": false,
 	"title": "Turtle Python",
-	"type": "page"
+	"type": "page",
+	"closeTerminalSession": false
 }

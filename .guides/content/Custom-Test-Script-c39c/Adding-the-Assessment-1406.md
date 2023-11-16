@@ -15,16 +15,23 @@ Add a `Name` to your assessment. This will look like a "title" for the test. Lea
 ![General Section](.guides/img/assessment-general.png)
 
 ## The Execution Section
-Leave the `LANGUAGE TYPE` as `custom`. In the field `COMMAND` write the command to launch your custom grading script. Toggle `ALLOW PARTIAL POINTS` if you want the question to have partial points.
-
+Leave the `LANGUAGE TYPE` as `custom`. In the field `COMMAND` write the command to launch your custom grading script, or simply drag the file into the field from the file tree. 
 ![Execution Section](.guides/img/assessment-execution.png)
 
 ## The Grading Section
-Enter the number of points for the problem. Toggle `ONE ATTEMPT ONLY` if you want to restrict students to one submission. To give student rich and immediate feedback, toggle `SHOW ANSWER AND RATIONALE TO STUDENT`. Fill in the box below with a solution, and use [triple backticks](https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks) to create a code block.
+Enter the number of points for the problem. Toggle `DEFINED NUMBER OF ATTEMPTS` if you want to restrict students submissions. 
+
+To give students immediate feedback, enable `SHOW RATIONALE TO STUDENT`. 
+ - Fill in the box below with feedback you want to provide. 
+ - Use [triple backticks](https://help.github.com/en/github/writing-on-github/creating-and-highlighting-code-blocks) to create a code block.
 
 ![Grading Section](.guides/img/assessment-grading.png)
+
+> **Note**: Allowing partial points has additional script requirements covered later in this guide.
 
 ## The Metadata Section
 These assessments can be added to your organization's assessment library. Filling out the `Metadata` section with tags allows you and your colleagues to search for these assessments. 
 
 ![Metadata Section](.guides/img/assessment-metadata.png)
+
+Click **Create** to complete the process.

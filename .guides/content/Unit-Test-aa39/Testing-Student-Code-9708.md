@@ -2,17 +2,14 @@
 
 ![Try It](.guides/img/try-it.png)
 
-Students need the ability to run their code and check their work prior to submitting it for a grade. Link the unit test to the `TRY IT` button. This gives the student the full feedback from the unit test, but it does not send a grade to the LMS. In addition, the rationale and feedback will not be shown. Here's the code to use in the Guide. Notice that this button calls a bash script as opposed to a Python script. When the unit test is in `.guides`, it needs to be called from that directory.
+Students need the ability to run their code and check their work prior to submitting it for a grade. 
+
+The `TRY IT` button allows students to run their code without submitting it. This gives them an opportunity to debug and verify their solution. When clicked, the student's code is executed, and they can see the output.
 
 ```
-{try it}(bash .guides/test_student_code.sh)
+{try it}(python3 student_code/circle.py)
 ```
 
-The bash script simply changes directory to the `.guides` directory and calls the Python unit test from there. Students will see the output from the test without affecting their grade.
+The above `TRY IT` button is a quick test of the students code file; it does not run the testing script. Refer to the **Comprehensive Feedback Button** section on page 4 for other options.
 
-```bash
-#!/bin/bash
-
-cd .guides
-python3 -m unittest test_circle_area.py
-```
+> **Note**: A simple solution that allows students the ability to test their code against the UnitTest script is to disable "Defined Number of Attempts" in the Grading section of the Advanced Code Test

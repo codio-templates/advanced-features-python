@@ -1,31 +1,45 @@
-# Sample content New Page
+# The Unit Test Script Overview
 
-You can upload any unit tests you already have to Codio. Scripts should be kept in the `.guides/secure` folder so that students do not have access to them. **Note**, this example assumes a straight points problem (no partial points), so points are assigned to the student only if all of the tests pass. A partial points example in in the next section.
+**Purpose**: The unit test script is designed to validate the correctness of the student's code against a set of predefined test cases, ensuring that the code behaves as expected under various conditions.
 
-## The Setup
-[See the Setup](open_file .guides/secure/test_circle_area.py panel=0 ref="import" count=5)
+- You can upload any existing unit test scripts to Codio.
+- For security, scripts should be stored **in the `.guides/secure` folder** to prevent student access.
 
-Since the test file is in `.guides/secure` and the student file is another directory, we need to append the system path so that the unit test can "see" the student work. Be sure to import the `sys` module and then add the path to the student file. Import the `unittest` module, the `circle_area` function from the student code, and `pi` from the `math` module. The test should be a subclass of `TestCase`. 
+## 1. Setup
 
-[Remove Highlighting](open_file .guides/secure/test_circle_area.py panel=0)
+[See the Setup](open_file .guides/secure/test_circle_area.py panel=0 ref="import" count=3)
 
-## Test the Output
-[See the Output Test](open_file .guides/secure/test_circle_area.py panel=0 ref="def test_area" count=4)
+- **Import Statements**:
+  - The `unittest` module is essential for defining test cases and running them as part of your test suite.
+  - `from math import pi` is a required constant in this example.
+  - `from circle import circle_area` pulls in the `circle_area` function from the student's code module named `circle`. This function is what the test cases will be evaluating to ensure it behaves and calculates as expected.
 
-Create several cases that test the end result of the student. Testing parameters like 0 and 1 are simple to do, but be sure to other numbers to verify the function is working as expected.
 
-[Remove Highlighting](open_file .guides/secure/test_circle_area.py panel=0)
+## 2. Defining Test Cases
 
-## Test Parameter Values
-[See the Value Test](open_file .guides/secure/test_circle_area.py panel=0 ref="def test_values" count=2)
+[See the Test Cases](open_file .guides/secure/test_circle_area.py panel=0 ref="class TestCircleArea" count=13)
 
-Circles cannot have a negative radius, so the student code should raise a value error when a negative number is passed to the function.
+- **Test Case Structure**:
+  - Create test methods within a `TestCase` subclass to check various aspects of the code.
+  - Each method should test a specific behavior of the `circle_area` function.
 
-[Remove Highlighting](open_file .guides/secure/test_circle_area.py panel=0)
+<details>
+<summary><strong>Test methods included:</strong></summary>
 
-## Test Parameter Types
-[See the Type Test](open_file .guides/secure/test_circle_area.py panel=0 ref="def test_types" count=4)
+- `test_area`: Verifies that the area calculation is accurate for given radii.
+- `test_values`: Ensures that passing a negative radius raises a `ValueError`.
+- `test_types`: Confirms that the code raises a `TypeError` for inputs that are not real numbers, such as strings, booleans, or complex numbers (in Python, complex numbers use `j` to represent the square root of -1). 
 
-A circle's radius cannot be expressed as a string or boolean value. In addition, a radius must be a real number. In Python, `j` represents the square root of -1. Verify that the student code raises a type error when parameters are not a real number.
+</details>
 
-[Remove Highlighting](open_file .guides/secure/test_circle_area.py panel=0)
+## 3. Test Execution & Results
+
+[See Providing Feedback](open_file .guides/secure/test_circle_area.py panel=0 ref="if __name__" count=2)
+
+- **Execution and Outcome**:
+  - The `unittest.main()` function is called to run all the test methods.
+  - If all tests pass, the student's code is deemed correct, otherwise, the specific failures are reported.
+
+--- 
+
+For more on the Python UnitTest framework, refer to the documentation [here](https://docs.python.org/3/library/unittest.html).

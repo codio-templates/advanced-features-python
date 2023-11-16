@@ -1,0 +1,28 @@
+{
+	"chapter": false,
+	"contentType": "markdown",
+	"files": [
+		{
+			"action": "close",
+			"path": "#tabs"
+		},
+		{
+			"action": "open",
+			"panel": 0,
+			"path": ".guides/pygame_example.py"
+		},
+		{
+			"action": "open",
+			"panel": 1,
+			"path": "#preview: https://{{domain3000}}/"
+		}
+	],
+	"id": "78ff5065-dd6d-5959-e160-8445c1a25d2a",
+	"layout": "3-cell",
+	"learningObjectives": "",
+	"path": [],
+	"reset": [],
+	"teacherOnly": false,
+	"title": "Pygame (original)",
+	"type": "page"
+}

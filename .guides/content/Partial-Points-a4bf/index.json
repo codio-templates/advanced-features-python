@@ -1,9 +1,9 @@
 {
 	"id": "a4bf2890-7e87-b4ef-62e4-1ccb35801e2c",
 	"order": [
-		"Custom-Test-5c0b",
-		"PyUnit-Test-fccb",
-		"Helper-Script-218e"
+		"Custom-Test---Outside-Secure-Folder-5c0b",
+		"Custom-Test---Inside-Secure-Folder-218e",
+		"PyUnit-Test-fccb"
 	],
 	"title": "Partial Points",
 	"type": "section"

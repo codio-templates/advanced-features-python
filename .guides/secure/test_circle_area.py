@@ -1,7 +1,5 @@
 import unittest
 from math import pi
-import sys
-sys.path.append("/home/codio/workspace/student_code/")
 from circle import circle_area
 
 

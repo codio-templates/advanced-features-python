@@ -1,7 +1,12 @@
+import os
 import sys
+
+# Path Append for Codio Assessments
 sys.path.append('/usr/share/codio/assessments')
 from lib.grade import send_partial_v2, FORMAT_V2_MD, FORMAT_V2_HTML, FORMAT_V2_TXT
-import os
+
+# Path Append for Student Code
+sys.path.append('/home/codio/workspace/student_code/')
 from exercise5 import Subway
 
 points = 0
@@ -16,6 +21,7 @@ advance_test = False
 change_fare_test = False
 
 def check_boarding(subway, new_passengers):
+  global points, feedback  # Declare both points and feedback as global
   """Verify that passengers board as expected"""
   subway.board(new_passengers)
   if subway.passengers == new_passengers:
@@ -23,11 +29,12 @@ def check_boarding(subway, new_passengers):
     points += 1
     return True
   else:
-    # Boarding test feedback
+    # Boarding test feedbac
     feedback += "<b>Boarding test did not pass</b>"
     return False
 
 def check_fares(subway, total_passengers):
+  global points, feedback  # Declare both points and feedback as global
   """Verify that fares are being tallyed"""
   if subway.total_fares == total_passengers * Subway.fare:
     # Fare test passed
@@ -39,6 +46,7 @@ def check_fares(subway, total_passengers):
     return False
 
 def check_exit(subway):
+  global points, feedback  # Declare both points and feedback as global
   """Verify that passengers are exiting as expected"""
   test1 = False
   test2 = False
@@ -58,6 +66,7 @@ def check_exit(subway):
     return False
 
 def check_distance(subway, desired_stop):
+  global points, feedback  # Declare both points and feedback as global
   """Verify that is being calculated as expected"""
   subway.current_stop = "Central"
   if subway.distance(desired_stop) == 3:
@@ -70,6 +79,7 @@ def check_distance(subway, desired_stop):
     return False
   
 def check_advance(subway):
+  global points, feedback  # Declare both points and feedback as global
   """Verify that the subway is advancing as expected"""
   test1 = False
   test2 = False
@@ -91,11 +101,12 @@ def check_advance(subway):
     return False
 
 def check_change_fare(subway, new_fare):
+  global points, feedback  # Declare both points and feedback as global
   """Verify that changing the fare affects all instances of the Subway class"""
   subway.change_fare(new_fare)
   if Subway.fare == new_fare:
     # Change fare test passed
-    points += 12
+    points += 2
     return True
   else:
     # Change fare test feedback

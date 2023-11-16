@@ -3,21 +3,21 @@
 	"contentType": "markdown",
 	"files": [
 		{
-			"action": "close",
-			"path": "#tabs"
+			"path": "#tabs",
+			"action": "close"
 		},
 		{
-			"action": "open",
+			"path": ".guides/secure/partial_points_custom_secure.py",
 			"panel": 0,
-			"path": ".guides/helper_script_partial_points.py"
+			"action": "open"
 		}
 	],
 	"id": "218efac5-e94c-fef4-b769-e60d343a0b5d",
 	"layout": "2-panels",
 	"learningObjectives": "",
 	"path": [],
-	"reset": [],
 	"teacherOnly": false,
-	"title": "Helper Script",
-	"type": "page"
+	"title": "Custom Test - Inside Secure Folder",
+	"type": "page",
+	"closeTerminalSession": false
 }

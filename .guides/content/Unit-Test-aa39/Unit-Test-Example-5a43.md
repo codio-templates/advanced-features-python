@@ -1,9 +1,18 @@
 # Unit Test Example
 
-Leave the code commented out at first. Run the unit test with the `TRY IT` button and see the code fail. Uncomment the code to see it pass the unit test.
+Below is an example of an advanced code test implementing the UnitTest Python testing framework.
+
+- The `TRY IT` button allows students to run their code without submitting it. This gives them an opportunity to debug and verify their solution.
+  
+- The `CHECK IT` button is for final submission. It runs the UnitTest tests included in the testing script contained in the secure folder.
+
+
+---
 
 Use the button below to test your work before submitting it for a grade.
 
-{try it}(bash .guides/test_student_code.sh)
+{try it}(python3 student_code/circle.py)
+
+
 
 {Check It!|assessment}(test-2633892246)

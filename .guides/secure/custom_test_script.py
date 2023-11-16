@@ -2,6 +2,7 @@ import os
 import subprocess
 import sys
 
+sys.path.append(os.path.join(os.getcwd(), ".guides", "secure"))
 path = "student_code"
 file = "custom_test.py"
 student_code = os.path.join(path, file)

@@ -1,18 +1,26 @@
 # Partial Points with a Unit Test
 
-## Writing the Test
+**Purpose**: When integrating partial points with a Python unit test, the test creation process remains unchanged. However, the method of assigning points within the Codio Guide differs slightly to accommodate partial credit.
 
-There are no changes to a Python unit test if it is using partial points. Create the test as normal, and add it to the Guide as indicated in the "Unit Test" section. The only change happens when adding the unit test to the Guide. Toggle the switch to allow for partial points. Then set the number of points for the assessment in the `GRADING` section.
+## Implementing the Test
 
-![Python Unit Test Partial Points](.guides/img/unit_test_partial_points.png)
+Develop your unit test as you would typically, following the guidelines in the "Unit Test" section. The modification for partial points comes into play when you add the test to your Guide:
 
-When using partial points, a student's score is calculated by the percentage of tests passed multiplied by the total number of points.
+- In the **Grading Tab** of the assessment, toggle on `ALLOW PARTIAL POINTS` to enable partial credit for the test.
 
-To the left is the Python unit test from before. There are three tests. `test_area` and `test_types` have three assert statements. All of these asserts must be true in order for the test to pass. `test_values` only has one assert statement; pass that and points will be assigned to the student.
+![Python Unit Test Partial Points](.guides/img/unit-test-partial-points.png)
 
-## Test Design
+Scores are computed based on the proportion of successful tests. The total points available are multiplied by this percentage to determine the student's score.
 
-How the test is designed affects how students are evaluated. In the test below, the student must pass the three assert statements to pass the test.
+Consider the provided Python unit test example. It comprises three distinct tests:
+- `test_area` and `test_types` each contain three assertions.
+- `test_values` has a single assertion.
+
+For a test to be considered passed, all its assertions must evaluate to true. Failing even one assertion in a test means no points are awarded for that test.
+
+## Strategic Test Segmentation
+
+The structuring of your tests will directly influence how points are awarded. In the example below, all assertions are part of a single test method:
 
 ```python
 def test_area(self):
@@ -21,9 +29,9 @@ def test_area(self):
   self.assertAlmostEqual(circle_area(2.1), pi * 2.1 ** 2)
 ```
 
-If the student passes the first two asserts but fails the third, then they would receive no points for this test. The student would not get credit for the assert statements they did pass.
+If a student's submission passes the first two assertions but fails the third, they would not earn any points for this test. The successful assertions do not contribute to their score.
 
-Rewriting the above test as three smaller tests would give the student credit for each assert statement they pass.
+To enable partial credit for each portion of the test they pass, you can divide the test into smaller, discrete tests:
 
 ```python
 def test_area1(self):
@@ -35,3 +43,5 @@ def test_area2(self):
 def test_area3(self):
   self.assertAlmostEqual(circle_area(2.1), pi * 2.1 ** 2)
 ```
+
+This approach allows students to receive credit for each assertion passed, providing a more nuanced assessment of their understanding and skills.

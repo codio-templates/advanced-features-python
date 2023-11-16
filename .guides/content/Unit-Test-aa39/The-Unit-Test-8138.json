@@ -3,21 +3,21 @@
 	"contentType": "markdown",
 	"files": [
 		{
-			"action": "close",
-			"path": "#tabs"
+			"path": "#tabs",
+			"action": "close"
 		},
 		{
-			"action": "open",
+			"path": ".guides/secure/test_circle_area.py",
 			"panel": 0,
-			"path": ".guides/secure/test_circle_area.py"
+			"action": "open"
 		}
 	],
 	"id": "8138932e-ccb9-efd3-f7b2-25601e5756a8",
 	"layout": "2-panels",
 	"learningObjectives": "",
 	"path": [],
-	"reset": [],
 	"teacherOnly": false,
 	"title": "The Unit Test",
-	"type": "page"
+	"type": "page",
+	"closeTerminalSession": false
 }

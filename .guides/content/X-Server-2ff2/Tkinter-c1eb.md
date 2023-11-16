@@ -11,6 +11,8 @@ In the new tab that opens, search for the X server package by typing `x` in the 
 
 ![Install X Server](.guides/img/install_x_server.png)
 
+When installation completes, select "Reload preview" button (two blue arrows icon) in preview window.
+
 ## Running the Python Script
 Directly execute the Python script that uses Tkinter, making sure it is [configured to utilize the X server](open_file .guides/tkinter_example.py panel=0 ref="import os" count=4).
 
@@ -19,12 +21,27 @@ Directly execute the Python script that uses Tkinter, making sure it is [configu
 Use the `TRY IT` button for immediate execution:
 
 ```bash
-{try it}(python3 .guides/tkinter_example.py)
+{try it | terminal}(python3 .guides/tkinter_example.py)
 ```
 
 After clicking `TRY IT`, graphical output should be visible, and you might need to refresh the output using the two blue arrows icon.
 
-{try it}(python3 .guides/tkinter_example.py)
+{try it | terminal}(python3 .guides/tkinter_example.py)
+
+---
+<details>
+  <summary>
+     <b>Launching command from terminal window</b>
+  </summary>
+
+In this updated setup, we use the terminal to run Python scripts, which differs from the previous method of using `TRY IT` buttons. This change enhances the learning experience for two main reasons:
+
+1. **Error Monitoring:** Running scripts directly in the terminal allows for immediate and clear visibility of any errors or issues, facilitating easier debugging and understanding of your code.
+
+2. **Execution Reliability:** This method ensures consistent and reliable script execution, avoiding timeouts and other constraints that may occur when using button-based commands in the Codio environment.
+</details>
+
+---
 
 ## Viewing the Output
 
@@ -33,45 +50,6 @@ Codio routes Tkinter output through port 3050. In the [editor settings](https://
 ![Tkinter Layout](.guides/img/tkinter_layout.png)
 
 This layout places the IDE in the top-left, the output at the bottom-left, and the Guide on the right.
-
-## Handling Errors
-
-The `TRY IT` button shows if the Python script ran successfully.
-
-![Program Ran Successfully](.guides/img/successfully.png)
-
-A successful message indicates script execution, not the correctness of the Python code. To debug, use an [opening directive](https://docs.codio.com/instructors/authoring/guides/open_close_content.html#) to access the terminal:
-
-```bash
-[Open Terminal](open_terminal panel=0)
-```
-
-In the terminal, run your code. Introduce an intentional error, like a typo, to test error detection.
-
-```python
-import os
-import tkinter
-
-os.environ['DISPLAY'] = ':0.0'  # X11 forwarding setup
-
-window = tkinter.Tk()
-window.title("My Window")
-window.geometry("500x350")
-
-# Intentional error in function call
-my_label = tkinter.Label(window, text="Hello World", font="DejaVuSerif 18")
-mylabel.grid(row=0, column=0)  # Misspelled variable
-
-window.mainloop()
-```
-
-{try it}(python3 .guides/tkinter_example.py)
-
-[Open Terminal](open_terminal panel=0)
-
-Look for an error message, such as `name 'mylabel' is not defined`.
-
-![Terminal Error](.guides/img/tkinter_error.png)
 
 ## Understanding Slow Output
 

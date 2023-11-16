@@ -11,6 +11,8 @@ In the new tab that opens, type `x` in the search box to locate the X server pac
 
 ![Install X Server](.guides/img/install_x_server.png)
 
+When installation completes, select "Reload preview" button (two blue arrows icon) in preview window.
+
 ## Running the Python Script
 Directly execute the Python script that incorporates Turtle graphics. Ensure it is [configured to use the X server](open_file .guides/turtle_example.py panel=0 ref="import os" count=4), essential for graphical operations.
 
@@ -19,12 +21,26 @@ Directly execute the Python script that incorporates Turtle graphics. Ensure it 
 Use the `TRY IT` button for immediate script execution:
 
 ```bash
-{try it}(python3 .guides/turtle_example.py)
+{try it | terminal}(python3 .guides/turtle_example.py)
 ```
 
 Clicking `TRY IT` should produce graphical output, which may require refreshing (via the two blue arrows icon).
 
-{try it}(python3 .guides/turtle_example.py)
+{try it | terminal}(python3 .guides/turtle_example.py)
+
+---
+<details>
+  <summary>
+     <b>Launching command from terminal window</b>
+  </summary>
+In this updated setup, we use the terminal to run Python scripts, which differs from the previous method of using `TRY IT` buttons. This change enhances the learning experience for two main reasons:
+
+1. **Error Monitoring:** Running scripts directly in the terminal allows for immediate and clear visibility of any errors or issues, facilitating easier debugging and understanding of your code.
+
+2. **Execution Reliability:** This method ensures consistent and reliable script execution, avoiding timeouts and other constraints that may occur when using button-based commands in the Codio environment.
+</details>
+
+---
 
 ## Viewing the Output
 
@@ -34,39 +50,6 @@ Codio channels Tkinter content through port 3050. In the [editor settings](https
 
 This configuration places the IDE top-left, output bottom-left, and the Guide on the right.
 
-## Handling Errors
-
-The `TRY IT` button, when clicked, indicates if the Python script ran successfully.
-
-![Program Ran Successfully](.guides/img/successfully.png)
-
-A successful message signifies script execution, not Python code correctness. For error checking, use an [opening directive](https://docs.codio.com/instructors/authoring/guides/open_close_content.html#) to access the terminal:
-
-```bash
-[Open Terminal](open_terminal panel=0)
-```
-
-In the terminal, type the command to run your code. To test error handling, deliberately introduce a typo in the `hilbert` function name and observe the behavior.
-
-```python
-import os
-import turtle
-
-os.environ['DISPLAY'] = ':0.0'  # X11 forwarding setup
-
-t = turtle.Turtle()
-
-def ilbert(dist, rule, angle, depth, t):  # Intentional typo
-  """Draw a Hilbert Curve"""
-```
-
-{try it}(python3 .guides/turtle_example.py)
-
-[Open Terminal](open_terminal panel=0)
-
-A `name 'hilbert' is not defined` error should be evident.
-
-![Terminal Error](.guides/img/terminal_error.png)
 
 ## Understanding Slow Output
 

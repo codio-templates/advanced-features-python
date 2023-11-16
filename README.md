@@ -18,3 +18,7 @@ Each section contains the following:
   * The one exception to this is the style checker. There is no code for the instructor to write. PEP-8 is used for the style guide. This cannot be changed.
 * Instructions on how to use the Advanced Code Test GUI to add the auto-graded assessment.
 * Instructions on how to create a button that runs the code test but does not send the results to the LMS.
+
+## Start the Guide to see the project
+To start Guides from this page, go to the tool bar at the top:
+![Play guide to start project](.guides/img/playGuide.png)

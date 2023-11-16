@@ -1,7 +1,4 @@
-import os
 import tkinter
-
-os.environ['DISPLAY'] = ':0.0'  # X11 forwarding setup
 
 window = tkinter.Tk()
 window.title("My Window")

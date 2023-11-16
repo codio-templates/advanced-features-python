@@ -1,7 +1,4 @@
-import os
 import pygame
-
-os.environ['DISPLAY'] = ':0.0'  # Setting up X11 forwarding
 
 class Ball:
   def __init__(self, surface, color, x, y, r):

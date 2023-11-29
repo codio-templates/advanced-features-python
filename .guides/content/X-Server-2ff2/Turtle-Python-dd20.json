@@ -7,7 +7,7 @@
 			"action": "close"
 		},
 		{
-			"path": ".guides/turtle_example.py",
+			"path": "student_code/turtle_example.py",
 			"panel": 0,
 			"action": "open"
 		},

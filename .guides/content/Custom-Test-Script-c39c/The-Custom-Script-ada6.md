@@ -7,7 +7,7 @@
 |||important
 ## Student Access Restrictions
 
-When provided access to the file tree, students students can navigate through files and folders in the workspace,. 
+When provided access to the file tree, students can navigate through files and folders in the workspace. 
 
 The `.guides` folder in its contents will **not** be available to them in the file tree, though students **can** access the `.guides` folder and its contents by navigating from the terminal.
 

@@ -15,7 +15,7 @@ Add a `Name` to your assessment. This will look like a "title" for the test. Lea
 ![General Section](.guides/img/assessment-general.png)
 
 ## The Execution Section
-Leave the `LANGUAGE TYPE` as `custom`. In the field `COMMAND` write the command to launch your custom grading script, or simply drag the file into the field from the file tree. 
+Leave the `LANGUAGE TYPE` as `Custom`. In the field `COMMAND` write the command to launch your custom grading script, or simply drag the file into the field from the file tree. 
 ![Execution Section](.guides/img/assessment-execution.png)
 
 ## The Grading Section

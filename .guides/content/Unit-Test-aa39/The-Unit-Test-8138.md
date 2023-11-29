@@ -34,7 +34,7 @@
 
 ## 3. Test Execution & Results
 
-[See Providing Feedback](open_file .guides/secure/test_circle_area.py panel=0 ref="if __name__" count=2)
+[Executes the Test](open_file .guides/secure/test_circle_area.py panel=0 ref="unittest.main" count=2)
 
 - **Execution and Outcome**:
   - The `unittest.main()` function is called to run all the test methods.

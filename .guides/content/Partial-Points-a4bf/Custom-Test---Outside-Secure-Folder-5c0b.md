@@ -40,7 +40,7 @@ Design each test to evaluate specific aspects of students' code:
 
 Instead of a binary pass/fail outcome, use `send_partial_v2` to send a detailed result back to Codio for Advanced code tests with partial points enabled:
 
-- **Result Submission**: Send the accumulated `points` and `feedback` to Codio [with an HTTP request](open_file .guides/partial_points_custom.py panel=0 ref="send results to Codio" count=3).
+- **Result Submission**: Send the accumulated `points` and `feedback` to Codio using the [Codio library call](open_file .guides/partial_points_custom.py panel=0 ref="send results to Codio" count=2)  to make an HTTP request.
 - **Formatting Feedback**: Decide on the feedback format (`FORMAT_V2_MD`, `FORMAT_V2_HTML`, or `FORMAT_V2_TXT`) and ensure it is consistently used throughout the test script.
 
 [Remove highlighting](open_file .guides/partial_points_custom.py panel=0)

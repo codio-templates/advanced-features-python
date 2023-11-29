@@ -17,19 +17,19 @@ When installation completes, select "Reload preview" button (two blue arrows ico
 Directly execute the Python script that incorporates Turtle graphics using the `TRY IT` button:
 
 ```bash
-{try it | terminal}(python3 .guides/turtle_example.py)
+{try it | terminal}(python3 student_code/turtle_example.py)
 ```
 
 Clicking `TRY IT` should produce graphical output, which may require refreshing (via the two blue arrows icon).
 
-{try it | terminal}(python3 .guides/turtle_example.py)
+{try it | terminal}(python3 student_code/turtle_example.py)
 
 ---
 <details>
   <summary>
      <b>Launching command from terminal window</b>
   </summary>
-In this updated setup, we use the terminal to run Python scripts, which differs from the previous method of using `TRY IT` buttons. This change enhances the learning experience for two main reasons:
+In this updated setup, we use the terminal to run Python scripts, which differs from the previous method of using <code>TRY IT</code> buttons. This change enhances the learning experience for two main reasons:
 
 1. **Error Monitoring:** Running scripts directly in the terminal allows for immediate and clear visibility of any errors or issues, facilitating easier debugging and understanding of your code.
 
@@ -37,7 +37,7 @@ In this updated setup, we use the terminal to run Python scripts, which differs 
 
 An alternative is to run the script in the background, which will not open a terminal window or include error feedback.
 ```bash
-{try it | background}(python3 .guides/turtle_example.py)
+{try it | background}(python3 student_code/turtle_example.py)
 ```
 
 </details>

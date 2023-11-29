@@ -12,7 +12,7 @@
 			"action": "open"
 		},
 		{
-			"path": ".guides/tkinter_example.py",
+			"path": "student_code/tkinter_example.py",
 			"panel": 0,
 			"action": "open"
 		}

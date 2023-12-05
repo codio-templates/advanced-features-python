@@ -7,7 +7,7 @@
 		"codeEnvConfig": "{\"type\":\"python\",\"subtype\":\"unittest\",\"files\":[\".guides/secure/test_circle_area.py\"],\"maxPoints\":100,\"timeout\":300,\"executable\":\"python3\",\"pythonwd\":\".guides/secure\",\"partialPoints\":false}",
 		"pythonPath": "/home/codio/workspace/student_code/",
 		"timeoutSeconds": 300,
-		"guidance": "Here is one possible solution:\n\n```python\nfrom math import pi\n\ndef circle_area(radius):\n  if type(radius) not in [int, float]:\n    raise TypeError(\"Radius must be a non-negative, real number.\")\n  if radius < 0:\n    raise ValueError(\"Radius cannot be a negative number\")\n  return pi * radius ** 2\n```\n\nYour test should test several valid radii. In addition, check fora **value error** when a negative number is passed to `circle_area`. Lastly, check for a **type error** when the wrong data type is passed to `circle_area`.",
+		"guidance": "Here is one possible solution:\n\n```python\nfrom math import pi\n\ndef circle_area(radius):\n  if type(radius) not in [int, float]:\n    raise TypeError(\"Radius must be a non-negative, real number.\")\n  if radius < 0:\n    raise ValueError(\"Radius cannot be a negative number\")\n  return pi * radius ** 2\n```\n\nYour test should test several valid radii. In addition, check for a **value error** when a negative number is passed to `circle_area`. Lastly, check for a **type error** when the wrong data type is passed to `circle_area`.",
 		"showGuidanceAfterResponseOption": {
 			"type": "Always"
 		},

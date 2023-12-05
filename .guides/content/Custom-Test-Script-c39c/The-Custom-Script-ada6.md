@@ -35,7 +35,7 @@ If you store grading scripts in the `.guides/secure` folder, they run securely a
 
 ## 2. Functions for Code Evaluation
 
-[See Functions](open_file .guides/secure/custom_test_script.py panel=0 ref="def" count=33)
+[See Functions](open_file .guides/secure/custom_test_script.py panel=0 ref="def" count=42)
 
 Each function returns a boolean value and tests an aspect of the student code. The number of functions for your grading script will depend on the number of aspects you are evaluating from the student code.
 
